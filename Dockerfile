@@ -1,5 +1,5 @@
 # Dockerfile for Astronomer Airflow Project
-FROM quay.io/astronomer/astro-runtime:11.0.0
+FROM astrocrpublic.azurecr.io/runtime:3.2-4
 
 # Copy requirements.txt and install dependencies
 COPY requirements.txt .
