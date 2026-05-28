@@ -18,7 +18,7 @@ dag = DAG(
     'employee_pipeline',
     default_args=default_args,
     description='Employee data processing pipeline',
-    schedule_interval='@daily',
+    schedule='@daily',
     catchup=False,
 )
 
