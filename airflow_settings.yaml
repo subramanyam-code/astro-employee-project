@@ -1,0 +1,21 @@
+# Airflow Settings Configuration
+# This file contains settings for the Airflow environment
+
+# Logging configuration
+logging:
+  level: INFO
+
+# Airflow configuration
+airflow:
+  core:
+    dags_folder: '/usr/local/airflow/dags'
+    base_log_folder: '/usr/local/airflow/logs'
+    
+# Database connection
+database:
+  backend: 'postgresql'
+  # Connection details should be set via environment variables
+
+# Executor configuration
+executor:
+  type: 'CeleryExecutor'
